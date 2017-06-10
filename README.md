@@ -10,3 +10,5 @@ All the images are from [Death To Stock](http://deathtothestockphoto.com/).
 
 
 ## Table Of Contents
+
+1. [x] JavaScript Drum Kit - [Demo](./01%20-%20JavaScript%20Drum%20Kit/index.html)
