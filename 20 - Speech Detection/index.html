@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Speech Detection</title>
+  <link rel="stylesheet" href="odometer-theme-plaza.css" />
 </head>
 <body>
 
-  
+  <h2 class="heading">Bro Counter <span class='odometer'>0</span></h2>
   <div class="words" contenteditable>
   </div>
 
@@ -15,6 +16,10 @@
 
   const recognition = new SpeechRecognition();
   recognition.interimResults = true;
+
+  let broCounter = 0;
+  const odometer = document.querySelector('.odometer');
+  const broRegex = new RegExp('bro', 'gi');
 
   let p = document.createElement('p');
   const words = document.querySelector('.words');
@@ -26,12 +31,17 @@
       .map(result => result.transcript)
       .join('');
 
-    p.textContent = transcript;
-    if (e.results[0].isFinal) {
-      p = document.createElement('p');
-      words.appendChild(p);
-    }
-    console.log(transcript);
+
+  const content = transcript.replace(broRegex, '<span class="hl">Bro =></span> <img src="bro.jpeg" class="bro"></img>')
+  p.innerHTML = content;
+
+  
+  if (e.results[0].isFinal) {
+    broCounter += (transcript.match(broRegex) || []).length
+    odometer.innerHTML = broCounter;
+    p = document.createElement('p');
+    words.appendChild(p);
+  }
 
   });
 
@@ -48,11 +58,23 @@
     }
 
     body {
-      background:#ffc600;
+      background: #193549;
       font-family: 'helvetica neue';
       font-weight: 200;
       font-size: 20px;
     }
+
+    .heading {
+      text-align: center;
+      color: white;
+    }
+
+    .hl {
+      color: #e34c26;
+      font-size: 22px;
+      font-weight: 400;
+    }
+
 
     .words {
       max-width:500px;
@@ -80,7 +102,27 @@
       border: 1px solid;
       border-color: transparent #efe4e4;
     }
+
+    .bro {
+      
+      /* make a square container */
+      width: 40px;
+      height: 40px;
+
+      /* fill the container, preserving aspect ratio, and cropping to fit */
+      background-size: cover;
+
+      /* center the image vertically and horizontally */
+      background-position: center;
+
+      /* round the edges to a circle with border radius 1/2 container size */
+      border-radius: 50%;
+      display: inline;
+      vertical-align: middle;
+    }
   </style>
+
+  <script type="text/javascript" src="odometer.min.js"></script>
 
 </body>
 </html>
