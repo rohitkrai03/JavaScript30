@@ -38,7 +38,7 @@
   const broSpan = '<span class="hl">Bro =></span> <img src="bro.jpeg" class="bro"></img>'
 
   let content = transcript.replace(broRegex, broSpan);
-  content = transcript.replace(sagarRegex, broSpan);
+  content = content.replace(sagarRegex, broSpan);
   p.innerHTML = content;
 
   
