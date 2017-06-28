@@ -20,6 +20,7 @@
   let broCounter = parseInt(localStorage.getItem('broCounter')) || 0;
   const odometer = document.querySelector('.odometer');
   const broRegex = new RegExp('bro', 'gi');
+  const sagarRegex = new RegExp('sagar', 'gi');
   odometer.innerHTML = broCounter;
 
 
@@ -34,7 +35,10 @@
       .join('');
 
 
-  const content = transcript.replace(broRegex, '<span class="hl">Bro =></span> <img src="bro.jpeg" class="bro"></img>')
+  const broSpan = '<span class="hl">Bro =></span> <img src="bro.jpeg" class="bro"></img>'
+
+  let content = transcript.replace(broRegex, broSpan);
+  content = transcript.replace(sagarRegex, broSpan);
   p.innerHTML = content;
 
   
