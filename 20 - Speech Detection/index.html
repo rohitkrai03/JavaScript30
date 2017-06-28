@@ -17,9 +17,11 @@
   const recognition = new SpeechRecognition();
   recognition.interimResults = true;
 
-  let broCounter = 0;
+  let broCounter = parseInt(localStorage.getItem('broCounter')) || 0;
   const odometer = document.querySelector('.odometer');
   const broRegex = new RegExp('bro', 'gi');
+  odometer.innerHTML = broCounter;
+
 
   let p = document.createElement('p');
   const words = document.querySelector('.words');
@@ -38,6 +40,7 @@
   
   if (e.results[0].isFinal) {
     broCounter += (transcript.match(broRegex) || []).length
+    localStorage.setItem('broCounter', broCounter);
     odometer.innerHTML = broCounter;
     p = document.createElement('p');
     words.appendChild(p);
