@@ -31,4 +31,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 22. [x] Follow Along Link Highlighter - [Demo](http://arkpod.in/JavaScript30/22%20-%20Follow%20Along%20Link%20Highlighter/index.html)
 23. [x] Speech Synthesis - [Demo](http://arkpod.in/JavaScript30/23%20-%20Speech%20Synthesis/index.html)
 24. [x] Sticky Nav - [Demo](http://arkpod.in/JavaScript30/24%20-%20Sticky%20Nav/index.html)
+26. [x] Stripe Follow Along Nav - [Demo](http://arkpod.in/JavaScript30/26%20-%20Stripe%20Follow%20Along%20Nav/index.html)
 
