@@ -34,4 +34,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 26. [x] Stripe Follow Along Nav - [Demo](http://arkpod.in/JavaScript30/26%20-%20Stripe%20Follow%20Along%20Nav/index.html)
 27. [x] Click and Drag - [Demo](http://arkpod.in/JavaScript30/27%20-%20Click%20and%20Drag/index.html)
 28. [x] Video Speed Controller - [Demo](http://arkpod.in/JavaScript30/28%20-%20Video%20Speed%20Controller/index.html)
+29. [x] Countdown Timer - [Demo](http://arkpod.in/JavaScript30/29%20-%20Countdown%20Timer/index.html)
 
