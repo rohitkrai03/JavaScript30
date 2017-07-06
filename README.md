@@ -33,4 +33,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 24. [x] Sticky Nav - [Demo](http://arkpod.in/JavaScript30/24%20-%20Sticky%20Nav/index.html)
 26. [x] Stripe Follow Along Nav - [Demo](http://arkpod.in/JavaScript30/26%20-%20Stripe%20Follow%20Along%20Nav/index.html)
 27. [x] Click and Drag - [Demo](http://arkpod.in/JavaScript30/27%20-%20Click%20and%20Drag/index.html)
+28. [x] Video Speed Controller - [Demo](http://arkpod.in/JavaScript30/28%20-%20Video%20Speed%20Controller/index.html)
 
