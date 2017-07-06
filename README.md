@@ -35,4 +35,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 27. [x] Click and Drag - [Demo](http://arkpod.in/JavaScript30/27%20-%20Click%20and%20Drag/index.html)
 28. [x] Video Speed Controller - [Demo](http://arkpod.in/JavaScript30/28%20-%20Video%20Speed%20Controller/index.html)
 29. [x] Countdown Timer - [Demo](http://arkpod.in/JavaScript30/29%20-%20Countdown%20Timer/index.html)
+30. [x] Whack A Mole - [Demo](http://arkpod.in/JavaScript30/30%20-%20Whack%20A%20Mole/index.html)
 
